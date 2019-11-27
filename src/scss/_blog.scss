@@ -1,0 +1,28 @@
+//
+// blog.scss
+//
+.blog-post {
+    .content {
+        .post-meta {
+            li, 
+            li a {
+                font-size: 14px;
+            }
+        }
+        .title {
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            font-weight: 500;
+            transition: all 0.5s ease;
+            &:hover {
+                color: $custom !important;
+            }
+        }
+        a {
+            transition: all 0.5s ease;
+            &:hover {
+                color: $custom !important;
+            }
+        }
+    }
+}
