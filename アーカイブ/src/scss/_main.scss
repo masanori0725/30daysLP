@@ -1,0 +1,341 @@
+/* --------------------------------------------- */
+/* ▼モバイルファースト (全環境に共通のデザイン) */
+/* --------------------------------------------- */
+
+/*———————————
+wrap
+———————————*/
+.wrap {
+	overflow: hidden;
+}
+
+/*———————————
+inner
+———————————*/
+.inner {
+	width: 90%;
+	min-width: 256px;
+	margin: 0 auto;
+}
+
+/*———————————
+CTAボタン
+———————————*/
+
+@mixin cta {
+	text-decoration: none;
+	display: inline-block;
+	width: 272px;
+	height: 48px;
+	background: #F35D5D 0% 0% no-repeat padding-box;
+	border-radius: 48px;
+	color: $white;	
+}
+
+/*———————————
+色違いセクション
+———————————*/
+.color_difference {
+	background: $primary 0% 0% no-repeat padding-box;
+	border: 3px solid $secondary;
+	color: $white;
+	.section-title {
+		color: white;
+	}
+}
+
+/*———————————
+セクションタイトル
+———————————*/
+.section-title {
+	height: 48px;
+	margin: 40px auto;
+	text-align: left;
+	font: M 20px/24px A P-OTF A1Gothic Std;
+	letter-spacing: 0;
+	color: $black;
+	p {
+	text-align: left;
+	font: R 12px/18px A P-OTF A1Gothic Std;
+	letter-spacing: 0;
+	color: $black;
+	opacity: 1;
+	}
+}
+
+/*———————————
+header
+———————————*/
+.header {
+	height: 64px;
+}
+.header-logo {
+	margin: 16px;
+	text-align: left;
+	img {
+		width: 144px;
+	}
+}
+
+/*———————————
+mv
+———————————*/
+.mv {
+	color: $white;
+	background :  url('../img/mv.png') center top/cover no-repeat;	
+	height: 432px;
+	position: relative;
+	border: 3px solid $secondary;
+	&::before {
+		content: '';
+		background-color: rgba(0,0,0,.5);
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.mv-content {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;	
+	p {
+		margin-top: 16px;
+		font-size: 12px;
+	}
+}
+
+.mv-title-1 {
+	display: inline-block;
+	width:50%;
+	margin-top: 80px;
+}
+.mv-title-2 {
+	display: inline-block;
+	width:70%;
+}
+
+.mv-lead {
+	font-size: 12px;
+}
+.mv-button{
+	@include cta;
+	margin-top: 68px;
+}
+
+/*———————————
+30daysブートキャンプとは
+———————————*/
+
+.intro-item {
+	background: $white 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 30px #CCCCCC4D;
+	border-radius: 24px;
+	opacity: 1;
+	padding: 24px;
+	margin: 24px 0;
+}
+
+/*———————————
+30daysブートキャンプの特徴
+———————————*/
+
+.character-items {
+	padding: 8px;
+}
+
+.character-item {
+	background: $white 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 30px #CCCCCC4D;
+	border-radius: 24px;
+	opacity: 1;
+	padding: 24px;
+	margin: 24px 0;
+	color: $black;
+}
+
+/*———————————
+運営メンバー
+———————————*/
+
+.coach-item img {
+	width: 100%;
+}
+
+/*———————————
+参加者の声
+———————————*/
+
+.voice {
+	margin-top: 80px;
+}
+
+.voice-item img{
+	width: 100%;
+}
+
+/*———————————
+スケジュールと授業例
+———————————*/
+
+.contents {
+	margin-top: 80px;
+}
+
+.contents-item img {
+	width: 100%;
+}
+
+/*———————————
+合宿概要
+———————————*/
+
+.camp {
+	margin-top: 80px;
+}
+
+.camp-wrapper {
+	table {
+		border-collapse:collapse
+	}
+	tr {
+		border-bottom: 1px solid $white;
+	}
+	td {
+		display: block;
+	}
+}
+
+/*———————————
+受講までの流れ
+———————————*/
+
+.flow {
+	margin-top: 120px;
+}
+
+.flow-item-title {
+	color: $secondary;
+	font-size: 24px;
+
+}
+
+.flow-item-content {
+	padding: 32px;
+	border: 5px solid $secondary;
+}
+
+/*———————————
+faq
+———————————*/
+
+.faq-wrapper {
+	margin-top: 80px;
+}
+
+.faq-list-item {
+	text-decoration: none;
+	border-bottom: 1px solid $white;
+}
+
+/*———————————
+contact
+———————————*/
+.contact {
+	border: 5px solid $secondary;
+	margin-top: 80px;
+
+}
+
+.contact-form {
+	text-align: center;
+}
+
+.contact-title {
+	margin: 40px auto;
+	text-align: center;
+	p{
+		text-align: center;
+		
+	}
+	img {
+		margin-top: 16px;
+		width: 182px;
+	}
+}
+
+.free {
+	position: relative;
+	display: inline-block;
+	padding: 0 35px;
+	margin: 0 auto;
+  
+  &:before, &:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	width: 20px;
+	height: 2px;
+	background-color: black;
+  }
+  &:before {
+	left:0;
+	transform: rotate(60deg);
+  }
+  &:after {
+	right: 0;
+	transform: rotate(-60deg);
+  }
+}
+
+.contact-text {
+	margin-top: 24px;
+}
+
+.contact-form-content {
+	margin:16px auto;
+	width: 288px;
+	height: 48px;
+	background: $white 0% 0% no-repeat padding-box;
+	box-shadow: 3px 3px 3px #CCCCCC4D;
+	border: 2px solid #CCCCCC4D;
+	border-radius: 12px;
+}
+
+.contact-button {
+	@include cta;
+	margin-top: 24px;
+	margin-bottom: 40px;
+}
+
+
+/*———————————
+footer
+———————————*/
+.footer {
+	margin-top: 80px;
+	background: $primary 0% 0% no-repeat padding-box;
+	color: $white;
+	height: 88px;
+	text-align: center;
+	font-size: .7rem;
+}
+
+/* -------------------------------------------- */
+/* ▼タブレット用デザインとして付け足すデザイン */
+/* -------------------------------------------- */
+@media (min-width: 560px) {
+
+}
+/* ------------------------------------ */
+/* ▼PC用デザインとして付け足すデザイン */
+/* ------------------------------------ */
+@media (min-width: 960px) {
+
+}

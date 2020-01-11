@@ -376,9 +376,6 @@ inner
 CTAボタン
 ———————————*/
 /*———————————
-水平線
-———————————*/
-/*———————————
 色違いセクション
 ———————————*/
 .color_difference {
@@ -430,15 +427,6 @@ header
 /*———————————
 mv
 ———————————*/
-.gradation {
-  background-color: #F4CC7D;
-  background-image: -webkit-repeating-linear-gradient(135deg, #fff, #fff 7px, transparent 0, transparent 10px);
-  background-image: repeating-linear-gradient(-45deg, #fff, #fff 7px, transparent 0, transparent 10px);
-  border: none;
-  height: 18px;
-  width: 40%;
-}
-
 .mv {
   background: url("../img/mv.png") center top/cover no-repeat;
   border: 3px solid #F4CC7D;

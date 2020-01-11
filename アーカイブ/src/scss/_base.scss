@@ -1,0 +1,31 @@
+//
+// base.scss
+//
+
+html {
+	font-size: 62.5%;
+	width: 100%;
+    font-family: $font-family-base;
+    line-height: 1.15;
+}
+
+body {
+	font-size: 1.6em;
+	color: $black;
+}
+
+div h2 {
+	font: M 20px/24px A P-OTF A1Gothic Std;
+	letter-spacing: 0;
+}
+
+div h3 {
+	text-decoration: none;
+	font: M 16px/24px A P-OTF A1Gothic Std;
+	letter-spacing: 0;
+}
+
+div p {
+	font: R 12px/18px A P-OTF A1Gothic Std;
+	letter-spacing: 0;
+}
